@@ -5,7 +5,9 @@ import { useState } from "react";
 const tvSeriesDB = {
   Sitcom: [
     { name: "The office", rating: "5/5" },
-    { name: "Friends", rating: "3.5/5" }
+    { name: "Friends", rating: "3.5/5" },
+    { name: "Big Bang Theory", rating: "4/5" },
+    { name: "How I Met Your Mother", rating: "3/5" }
   ],
 
   Crime: [
@@ -16,8 +18,13 @@ const tvSeriesDB = {
     {
       name: "Narcos",
       rating: "4.5/5"
+    },
+    {
+      name: "Prison Break",
+      rating: "4/5"
     }
   ],
+
   SciFi: [
     {
       name: "The Boys",
@@ -25,6 +32,24 @@ const tvSeriesDB = {
     },
     {
       name: "Black Mirror",
+      rating: "4.5/5"
+    },
+    {
+      name: "Dark",
+      rating: "5/5"
+    }
+  ],
+  actiondrama: [
+    {
+      name: "Game Of Thrones",
+      rating: "5/5"
+    },
+    {
+      name: "Vikings",
+      rating: "4.5/5"
+    },
+    {
+      name: "Peaky Blinders",
       rating: "5/5"
     }
   ]
@@ -37,7 +62,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1> 📚 Tv Series </h1>
+      <h1> 🎥 Tv Series </h1>
       <p style={{ fontSize: "smaller" }}>
         {" "}
         Checkout my favorite tvSeries. Select a genre to get started{" "}
